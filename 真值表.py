@@ -1,0 +1,5 @@
+print("P\tQ\tP∧Q\tP∨Q\tP¬∧Q\tP¬∨Q\tP→Q\tP←Q\tP↔Q")
+print("F\tF\tF\tF\tF\tF\tT\tT\tT")
+print("F\tT\tF\tT\tT\tT\tT\tF\tF")
+print("T\tF\tF\tT\tT\tT\tF\tT\tF")
+print("T\tT\tT\tT\tF\tF\tT\tT\tT")
