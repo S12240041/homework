@@ -1,0 +1,32 @@
+def collect_user_data():
+    # 收集用戶資料
+    name = input("請輸入您的姓名: ")
+    age = int(input("請輸入您的年齡: "))
+    height = float(input("請輸入您的身高（米）: "))
+    favorite_color = input("請輸入您喜歡的顏色: ")
+
+    # 將用戶資料存儲在字典中
+    user_data = {
+        "name": name,
+        "age": age,
+        "height": height,
+        "favorite_color": favorite_color
+    }
+
+    return user_data
+
+def format_user_summary(user_data):
+    # 格式化用戶資料摘要
+    summary = f"{user_data['name']}, {user_data['age']}歲, 身高{user_data['height']}米, 喜愛的顏色是{user_data['favorite_color']}。"
+    return summary
+
+if __name__ == "__main__":
+    # 收集用戶資料
+    user_data = collect_user_data()
+
+    # 格式化用戶資料摘要
+    user_summary = format_user_summary(user_data)
+
+    # 輸出用戶資料摘要
+    print("用戶資料摘要:")
+    print(user_summary)
